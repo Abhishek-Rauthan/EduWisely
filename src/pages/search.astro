@@ -10,8 +10,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 </BaseLayout>
 
 <script>
-  window.addEventListener("DOMContentLoaded", (event) => {
-    // @ts-ignore
+  document.addEventListener("astro:page-load", () => {
+    //@ts-ignore
     new PagefindUI({
       element: "#search",
       showSubResults: true,
